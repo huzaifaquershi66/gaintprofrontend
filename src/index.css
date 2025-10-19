@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 1s ease-out forwards;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-in forwards;
+  }
+   */
+
+   .backing {
+    /* Start off-screen */
+    
+     /* background-color: #3a3b3c; */
+     transform: translateX(-100%); /* Start off-screen */
+     transition: transform 0.3s ease-in-out;
+   }
+   
+   .backing.show {
+     transform: translateX(0); /* Move into view */
+   }
+
+   .glass-effect {
+    background: rgba(255, 255, 255, 0.3); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 10px; /* Rounded edges for aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Glass-like border */
+  }
+  
+
+  .loader {
+    border: 4px solid #e5e7eb;
+    border-top: 4px solid #6366f1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #tidio-chat {
+  bottom: 100px !important; /* Adjust this value to move the chatbot higher */
+  right: 20px !important;  /* Optional: Adjust the right alignment */
+}
