@@ -28,7 +28,7 @@ const WithdrawPage = () => {
 
     try {
       const response = await axios.put(
-        "https://gainting.duckdns.org/api/auth/update-withdraw-pin",
+        "https://gainti.work.gd/api/auth/update-withdraw-pin",
         {
           userId,
           newWithdrawPin,
