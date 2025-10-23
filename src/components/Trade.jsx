@@ -62,7 +62,7 @@ const TradePage = () => {
   const updateDeposit = async (userId, currency, amount) => {
     try {
       await axios.post(
-        "https://gainting.duckdns.org/api/auth/updateDeposit",
+        "https://gainti.work.gd/api/auth/updateDeposit",
         {
           userId,
           currency,
