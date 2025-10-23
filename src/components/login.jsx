@@ -17,7 +17,7 @@ const SignIn = () => {
 
     try {
       const response = await axios.post(
-        "https://gainting.duckdns.org/api/auth/login",
+        "https://gainti.work.gd/api/auth/login",
         { username, password },
         {
           withCredentials: true,
