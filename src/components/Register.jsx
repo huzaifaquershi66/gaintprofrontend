@@ -25,7 +25,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        'https://gainting.duckdns.org/api/auth/signup',
+        'https://gainti.work.gd/api/auth/signup',
         formData,
         {
           withCredentials: true,
