@@ -30,7 +30,7 @@ const ChangePasswordPage = () => {
       }
 
       const response = await axios.put(
-        "https://gainting.duckdns.org/api/auth/updatepassword",
+        "https://gainti.work.gd/api/auth/updatepassword",
         {
           userId,
           oldPassword,
