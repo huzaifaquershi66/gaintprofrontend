@@ -128,7 +128,7 @@ const Transactions = () => {
 // }, []);
 const fetchOrders = async () => {
   try {
-    const response = await fetch("https://gainting.duckdns.org/api/orders");
+    const response = await fetch("https://gainti.work.gd/api/orders");
     const data = await response.json();
     setOrders(data);
   } catch (error) {
@@ -137,7 +137,7 @@ const fetchOrders = async () => {
 };
 const fetchTimer = async () => {
   try {
-    const response = await fetch("https://gainting.duckdns.org/api/timer"); // ✅ Change HTTPS → HTTP
+    const response = await fetch("https://gainti.work.gd/api/timer"); // ✅ Change HTTPS → HTTP
     const data = await response.json();
     setTimer(data.countdown);
     fetchOrders(); 
@@ -275,7 +275,7 @@ useEffect(() => {
           // const token = localStorage.getItem("token"); // Replace with your token storage method
           
           // Make the request with the token
-          const response = await axios.get("https://gainting.duckdns.org/api/auth/userdeposit", {
+          const response = await axios.get("https://gainti.work.gd/api/auth/userdeposit", {
            
             withCredentials: true, 
           });
