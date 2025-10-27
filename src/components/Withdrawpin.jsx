@@ -28,7 +28,7 @@ const WithdrawPage = () => {
 
     try {
       const response = await axios.put(
-        "https://casino2-e0vk.onrender.com/api/auth/update-withdraw-pin",
+        "https://gainti.work.gd/api/auth/update-withdraw-pin",
         {
           userId,
           newWithdrawPin,
