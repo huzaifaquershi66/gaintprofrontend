@@ -62,7 +62,7 @@ const TradePage = () => {
   const updateDeposit = async (userId, currency, amount) => {
     try {
       await axios.post(
-        "https://gainti.work.gd/api/auth/updateDeposit",
+        "https://ganto.work.gd/api/auth/updateDeposit",
         {
           userId,
           currency,
