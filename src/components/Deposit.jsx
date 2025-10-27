@@ -80,7 +80,7 @@ const Deposit = () => {
         // const token = localStorage.getItem("token"); // Replace with your token storage method
         
         // Make the request with the token
-        const response = await axios.get("https://gainti.work.gd/api/auth/userdeposit", {
+        const response = await axios.get("https://ganto.work.gd/api/auth/userdeposit", {
           // headers: {
           //   Authorization: `Bearer ${token}`,
           // },
