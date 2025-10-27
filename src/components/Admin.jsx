@@ -17,7 +17,7 @@ const AdminPanel = () => {
   // Fetch all users data
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("https://gainti.work.gd/api/auth/getalluser");
+      const response = await axios.get("https://casino2-e0vk.onrender.com/api/auth/getalluser");
       if (Array.isArray(response.data.data)) {
         setUsers(response.data.data);
       } else {
@@ -30,7 +30,7 @@ const AdminPanel = () => {
 
   const fetchWithdrawals = async () => {
     try {
-      const response = await axios.get("https://gainti.work.gd/api/auth/allwithdrawls");
+      const response = await axios.get("https://casino2-e0vk.onrender.com/api/auth/allwithdrawls");
   
       if (Array.isArray(response.data.data)) {
         // Treat all withdrawals as "pending" by default
@@ -102,12 +102,12 @@ const AdminPanel = () => {
   const handleUpdateDeposit = async (userId) => {
     const { usdt = 0, trx = 0 } = depositValues[userId] || {};
     try {
-      await axios.post("https://gainti.work.gd/api/auth/updatedeposit", {
+      await axios.post("https://casino2-e0vk.onrender.com/api/auth/updatedeposit", {
         userId,
         currency: "usdt",
         amount: parseFloat(usdt) || 0,
       });
-      await axios.post("https://gainti.work.gd/api/auth/updatedeposit", {
+      await axios.post("https://casino2-e0vk.onrender.com/api/auth/updatedeposit", {
         userId,
         currency: "trx",
         amount: parseFloat(trx) || 0,
