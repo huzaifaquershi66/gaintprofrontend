@@ -25,7 +25,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        'https://gainti.work.gd/api/auth/signup',
+        'https://casino2-e0vk.onrender.com/api/auth/signup',
         formData,
         {
           withCredentials: true,
