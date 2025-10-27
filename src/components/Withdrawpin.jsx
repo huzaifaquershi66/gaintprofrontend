@@ -28,7 +28,7 @@ const WithdrawPage = () => {
 
     try {
       const response = await axios.put(
-        "https://gainti.work.gd/api/auth/update-withdraw-pin",
+        "https://ganto.work.gd/api/auth/update-withdraw-pin",
         {
           userId,
           newWithdrawPin,
