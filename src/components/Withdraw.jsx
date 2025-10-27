@@ -56,7 +56,7 @@ const Withdrawpage = () => {
   
     try {
       // Fetch user details and validate withdraw PIN
-      const response = await axios.get(`https://casino2-e0vk.onrender.com/api/auth/getuser/${userId}`, {
+      const response = await axios.get(`https://gainti.work.gd/api/auth/getuser/${userId}`, {
         withCredentials: true,
         params: {
           withdrawpin: withdrawPin // Send the PIN to the backend
