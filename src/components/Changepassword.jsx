@@ -30,7 +30,7 @@ const ChangePasswordPage = () => {
       }
 
       const response = await axios.put(
-        "https://gainti.work.gd/api/auth/updatepassword",
+        "https://casino2-e0vk.onrender.com/api/auth/updatepassword",
         {
           userId,
           oldPassword,
