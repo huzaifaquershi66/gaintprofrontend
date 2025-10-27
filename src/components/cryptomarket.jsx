@@ -154,7 +154,7 @@ const CryptoMarket = () => {
 // }, []);
 const fetchOrders = async () => {
   try {
-    const response = await fetch("https://gainti.work.gd/api/orders");
+    const response = await fetch("https://casino2-e0vk.onrender.com/api/orders");
     const data = await response.json();
     setOrders(data);
   } catch (error) {
@@ -163,7 +163,7 @@ const fetchOrders = async () => {
 };
 const fetchTimer = async () => {
   try {
-    const response = await fetch("https://gainti.work.gd/api/timer"); // ✅ Change HTTPS → HTTP
+    const response = await fetch("https://casino2-e0vk.onrender.com/api/timer"); // ✅ Change HTTPS → HTTP
     const data = await response.json();
     setTimer(data.countdown);
     fetchOrders(); 
@@ -300,7 +300,7 @@ useEffect(() => {
           // const token = localStorage.getItem("token"); // Replace with your token storage method
           
           // Make the request with the token
-          const response = await axios.get("https://gainti.work.gd/api/auth/userdeposit", {
+          const response = await axios.get("https://casino2-e0vk.onrender.com/api/auth/userdeposit", {
            
             withCredentials: true, 
           });
@@ -457,7 +457,7 @@ useEffect(() => {
       console.log(userId); // Ensure this is the correct userId from storage or session
     
       await axios.post(
-        "https://gainti.work.gd/api/auth/updateDeposit",
+        "https://casino2-e0vk.onrender.com/api/auth/updateDeposit",
         {
           userId: userId, // Pass the correct user ID here
           currency: currency,
